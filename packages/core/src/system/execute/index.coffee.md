@@ -140,6 +140,8 @@ nikita.system.execute({
       options.bash = 'bash' if options.bash is true
       options.arch_chroot = 'arch-chroot' if options.arch_chroot is true
       options.cmd = "set -e\n#{options.cmd}" if options.cmd and options.trap
+      # Restore original command if any
+      options.cmd = options.cmd_original if options.cmd_original
       options.cmd_original = "#{options.cmd}"
       options.dirty ?= false
       throw Error "Required Option: the \"cmd\" option is not provided" unless options.cmd?

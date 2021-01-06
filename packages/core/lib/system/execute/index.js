@@ -174,6 +174,10 @@ module.exports = function({metadata, options}, callback) {
   if (options.cmd && options.trap) {
     options.cmd = `set -e\n${options.cmd}`;
   }
+  if (options.cmd_original) {
+    // Restore original command if any
+    options.cmd = options.cmd_original;
+  }
   options.cmd_original = `${options.cmd}`;
   if (options.dirty == null) {
     options.dirty = false;
