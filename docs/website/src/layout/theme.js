@@ -42,16 +42,16 @@ let theme = createMuiTheme({
     h1: {
       fontSize: '3rem',
       wordWrap: 'break-word',
-      color: '#777777',
+      color: '#333',
     },
     h2: {
       fontSize: '2rem',
-      color: '#777777',
+      color: '#333',
       scrollMarginTop: scrollMarginTop
     },
     h3: {
       fontSize: '1.5rem',
-      color: '#777777',
+      color: '#333',
       scrollMarginTop: scrollMarginTop
     },
     body1: {

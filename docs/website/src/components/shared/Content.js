@@ -60,14 +60,14 @@ const useStyles = theme => ({
       ...theme.typography.h2,
       ...theme.typography.gutterBottom,
       fontWeight: 'normal',
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(6),
     },
     '& h3': {
       ...theme.typography.root,
       ...theme.typography.h3,
       ...theme.typography.gutterBottom,
       fontWeight: 'normal',
-      marginTop: theme.spacing(3),
+      marginTop: theme.spacing(4),
     },
     '& blockquote': {
       borderLeft: '3px solid #777777',
